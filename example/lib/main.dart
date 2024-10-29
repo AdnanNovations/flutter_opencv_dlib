@@ -21,9 +21,10 @@ void main() async {
   cameras = await availableCameras();
   for (int i = 0; i < cameras.length; i++) {
     print('AVAILABLE CAMERAS: $i  '
-        'name: ${cameras[i].name}   '
-        'lensDirection: ${cameras[i].lensDirection}   '
-        'sensorOrientation: ${cameras[i].sensorOrientation}');
+      'name: ${cameras[i].name}   '
+      'lensDirection: ${cameras[i].lensDirection}   '
+      'sensorOrientation: ${cameras[i].sensorOrientation}'
+    );
   }
 
   await SystemChrome.setPreferredOrientations([

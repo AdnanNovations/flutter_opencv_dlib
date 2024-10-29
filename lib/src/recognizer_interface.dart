@@ -1,7 +1,6 @@
 import 'dart:async';
 import 'dart:ffi';
 import 'dart:io';
-import 'dart:typed_data';
 
 import 'package:ffi/ffi.dart';
 import 'package:flutter/foundation.dart';
@@ -25,7 +24,7 @@ class RecognizedFace {
   );
 }
 
-class FaceStruct extends Struct {
+final class FaceStruct extends Struct {
   external Pointer<Uint8> faceImg;
 
   @Int32()

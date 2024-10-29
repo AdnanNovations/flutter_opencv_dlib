@@ -22,6 +22,7 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
+    namespace = "com.bavagnoli.flutter_opencv_dlib"
     compileSdkVersion 31
 
     compileOptions {
